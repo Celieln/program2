@@ -1,0 +1,70 @@
+# API & Backend
+api/
+**/api/
+
+# Database
+*.sql
+*.sqlite
+*.db
+
+# Config & Auth
+config/
+auth/
+**/config/
+**/auth/
+.env
+.env.*
+*.env
+
+# Admin panels
+admin/
+**/admin/
+
+# Vendor & Dependencies
+vendor/
+node_modules/
+composer.lock
+package-lock.json
+
+# Logs & temp
+*.log
+*.tmp
+*.temp
+uploads/temp/
+**/uploads/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Sensitive files
+*.key
+*.pem
+*.crt
+password*
+secret*
+
+# Project specific
+*.zip
+*.xlsx
+*.xls
+*.pdf
+*.csv
+logs/
+data/secrets/
+data/files/
+data/*.json
+*.md
+todo.md
+strukturfolder.md
+dashboard.zip
+index.zip
+auth.zip
+features.zip
