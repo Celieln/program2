@@ -10,10 +10,30 @@ Tools compare data Excel - bandingkan 2 file dan lihat perbedaan.
 
 ## Teknologi
 
-- **PHP** - Bahasa pemrograman server-side
-- **MySQL** - Database
-- **Bootstrap 5** - Styling & responsive
-- **HTML5 + CSS3 + JavaScript** - Front-end
+**Backend**
+- PHP 8.x - web-based dengan **PDO**
+- Compare engine: upload File A vs File B, mapping kolom, diff detection
+- Export perbedaan ke Excel (PHPSpreadsheet)
+- Session-based authentication (bcrypt)
+
+**Frontend**
+- HTML5, CSS3, JavaScript (ES6+)
+- Bootstrap 5 responsive dashboard
+
+**Database**
+- MySQL 8 / MariaDB
+
+**Tooling & DevOps**
+- Composer
+- Git & GitHub
+- Laragon/WAMP
+
+## Arsitektur
+
+- **Front-end first** - hanya berisi tampilan depan (public UI)
+- Routing & layout modular (includes, pages)
+- Keamanan berlapis: prepared statements, input sanitization, password hashing
+- Session-based auth dengan bcrypt & role-based access control
 
 ## Quick Start
 
@@ -21,9 +41,9 @@ Prasyarat: [Laragon](https://laragon.org) / [XAMPP](https://www.apachefriends.or
 
 1. Clone repository ke folder laragon/www/ atau htdocs/:
 
-   `ash
+   ```bash
    git clone https://github.com/Celieln/program2.git
-   `
+   ```
 
 2. Import database (jika tersedia) melalui phpMyAdmin.
 3. Konfigurasi koneksi database di folder config/.
@@ -31,12 +51,12 @@ Prasyarat: [Laragon](https://laragon.org) / [XAMPP](https://www.apachefriends.or
 
 ## Struktur Proyek
 
-`
+```
 program2/
-  includes/    # Komponen yang di-include
+  includes/    # Komponen yang di-include (header, footer, dll)
   assets/      # CSS, JS, gambar
   *.php        # Halaman tampilan depan
-`
+```
 
 ## Kontribusi
 
@@ -44,4 +64,4 @@ Kontribusi sangat diterima! Baca [CONTRIBUTING](CONTRIBUTING.md) dan buka [Issue
 
 ## Lisensi
 
-[MIT](LICENSE) Â© [Celieln](https://github.com/Celieln)
+[MIT](LICENSE) (c) [Celieln](https://github.com/Celieln)
